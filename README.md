@@ -1,12 +1,22 @@
 # Bliżej Nieba
 
-Польский демонстрационный сайт дома в Богдановке. HTML, CSS и JavaScript без сборки и зависимостей.
+Польский демонстрационный сайт дома в Богдановке. HTML, CSS и JavaScript без сборки и зависимостей. Готовый сайт находится в папке `public/`.
 
 ## Предпросмотр
 
 `npm run dev` — http://127.0.0.1:4173 (требуется Python 3).
 
-Также можно открыть index.html напрямую. `npm run check` проверяет синтаксис JavaScript.
+Также можно открыть `public/index.html` напрямую. `npm run check` проверяет синтаксис JavaScript.
+
+## Публикация в Cloudflare Pages
+
+Для этого проекта в Cloudflare Pages выберите:
+
+- Framework preset: `None`
+- Build command: `exit 0`
+- Build output directory: `public`
+
+Cloudflare загрузит только содержимое `public/`, поэтому служебные файлы и `node_modules/` не попадут в публикацию.
 
 ## Реализовано
 
